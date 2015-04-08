@@ -7,7 +7,7 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+  padding-top: 0px;
   padding-bottom: 20px;
 }
 
@@ -45,8 +45,10 @@ body {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+ /* border-bottom: 1px solid #e5e5e5;*/
 }
 
 .jumbotron .btn {
@@ -62,12 +64,6 @@ body {
 .marketing p + h4 {
   margin-top: 28px;
 }
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
 
   /* Remove the padding we set earlier */
   .header,

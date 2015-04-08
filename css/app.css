@@ -1,5 +1,57 @@
 .nav-header{
   margin-top: 0;
-  background-color: red;
-  height: 100px;
+  background-color: white;
+  height: 120px;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+ul#horizontal-list li{
+  display: inline;
+  padding-left: 100px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.navbar h3 {
+  margin-top: 0;
+  font-size: 60px;
+  text-align: center;
+}
+
+.background-image {
+  margin-right: auto;
+  margin-left: auto;
+  z-index: -10;
+  opacity: 0.8;
+  display: inline;
+  height: 800px;
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+  height: 50%;
+}
+
+.text {
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 400px;
+  width: 100%;
+  font-size: 25px;
+}
+
+.text h1 {
+  font-size: 70px;
+}
+
+.text p {
+  font-size: 30px;
 }

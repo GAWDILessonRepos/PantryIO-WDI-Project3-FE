@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="background-image">
+      <img src="http://thumbs.dreamstime.com/z/colorful-herbs-spices-selection-aromatic-ingredients-cutting-board-blank-notepad-copyspace-34483552.jpg" alt="Ingredients on cutting board">
+    </div>
+    <div class="text">
+    <h1>Enter Ingredient(s) to Start</h1>
+    <p class="lead">Let's look up some recipes, shall we?</p>
+
+    <form class="search-form" name="searchForm" ng-controller="RecipesController as recipesController" ng-submit="recipesController.searchRecipes(recipesController.ingredients)">
+      <input id="ingredients" type="text" ng-model="recipesController.ingredients.q" placeholder="ingredients">
+      <input type="submit" class="button-submit">
+    </form>
+    <br>
+      <div class="search-form" name="searchForm" ng-controller="RecipesController as recipesController">
+        <button ng-click="recipesController.loadAllRecipes()" class="button-submit">Gimme All Recipes!</button>
+      </div>
+    </div>
+  </div>

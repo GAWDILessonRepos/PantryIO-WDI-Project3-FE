@@ -1,6 +1,7 @@
 <section>
 <header><h1>All of the Recipes</h1></header>
-  <article ng-repeat="recipe in recipesController.recipes">
-    <h3>{{recipe.title}}</h3>
-  </article>
+<article ng-repeat="recipes in recipesController.recipes.recipes">
+  <h3>{{recipes.title}}</h3>
+  <img ng-src="{{recipes.image_url}}"/>
+</article>
 </section>
