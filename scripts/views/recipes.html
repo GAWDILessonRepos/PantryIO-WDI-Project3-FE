@@ -1,7 +1,14 @@
-<section>
-<header><h1>All of the Recipes</h1></header>
-<article ng-repeat="recipes in recipesController.recipes.recipes">
-  <h3>{{recipes.title}}</h3>
-  <img ng-src="{{recipes.image_url}}"/>
-</article>
-</section>
+<div class="container marketing">
+    <header><h1>All of the Recipes</h1></header>
+      <!-- Three columns of text below the carousel -->
+        <div class="col-xs-4" ng-repeat="recipes in recipesController.recipes.recipes">
+          <article class='recipe'>
+          <img ng-src="{{recipes.image_url}}" width="200" height="200">
+          <h2>{{recipes.title}}</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          </article>
+        </div><!-- /.col-lg-4 -->
+
+</div>
+

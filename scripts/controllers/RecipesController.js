@@ -19,6 +19,8 @@ function recipesController(RecipesFactory, $location){
       vm.ingredients = {};
       $location.path('/recipes');
     });
+
+
   };
 
   vm.recipes = RecipesFactory.recipes;

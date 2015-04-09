@@ -55,3 +55,7 @@ ul#horizontal-list li{
 .text p {
   font-size: 30px;
 }
+
+.recipe {
+  height: 500px;
+}
