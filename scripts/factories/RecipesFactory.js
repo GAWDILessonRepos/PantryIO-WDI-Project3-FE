@@ -24,9 +24,21 @@ angular.module('PantryIO').factory('RecipesFactory', ['$http', '$window', 'Serve
     });
   };
 
+  var getOneRecipe = function(recipe_id){
+    console.log("factory: trying to get a recipe");
+    console.log(recipe_id);
+    return $http.patch(ServerUrl +'/food2fork/2', recipe_id).success(function(data){
+      console.log(data);
+      angular.copy(data, recipes);
+    }).error(function(){
+      console.log("error");
+    });
+  }
+
   return {
     getAllRecipes: getAllRecipes,
     getRecipes: getRecipes,
+    getOneRecipe: getOneRecipe,
     recipes: recipes
   };
 
