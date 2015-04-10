@@ -1,1 +1,21 @@
+<div class="oneRecipe">
+ <div ng-repeat="recipe in recipesController.recipes">
+    <div id="left">
+      <img ng-src="{{recipe.image_url}}" width="400" height="300">
+      <h1>{{recipe.title}}</h1>
+      <h2>Source: {{recipe.publisher}}</h2>
+      <h3>Number of Ingredients missing: {{recipe.ingredients.length}}</h3>
+      <h3>How many ingredients entered:</h3> <h3>{{recipesController.array_ingredients.length}}</h3>
+    </div>
+
+    <div id="right">
+      <article>
+       <ul ng-repeat="ingredient in recipe.ingredients track by $index">
+      <li>{{ingredient}}</li>
+      </ul>
+      </article>
+      <a href="{{recipe.source_url}}" class="btn btn-success btn-sm" target="_blank">Get Instructions!</a>
+    </div>
+  </div>
+</div>
 

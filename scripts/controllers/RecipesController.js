@@ -8,7 +8,6 @@ function recipesController(RecipesFactory, $location){
   console.log("in recipesController");
 
   vm.loadAllRecipes = function(ingredients){
-    console.log("why am i in load all recipes?")
     RecipesFactory.getAllRecipes(ingredients).then(function(response){
       $location.path('/recipes');
     });
@@ -36,5 +35,6 @@ function recipesController(RecipesFactory, $location){
   };
 
   vm.recipes = RecipesFactory.recipes;
+  vm.array_ingredients = RecipesFactory.array_ingredients;
 }
 

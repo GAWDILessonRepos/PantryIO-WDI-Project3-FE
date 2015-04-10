@@ -28,7 +28,7 @@ ul#horizontal-list li{
   z-index: -10;
   opacity: 0.8;
   display: inline;
-  height: 800px;
+  height: 200;
 }
 
 .container {
@@ -43,19 +43,65 @@ ul#horizontal-list li{
   left: 0;
   position:absolute;
   text-align:center;
-  top: 400px;
+  top: 215px;
   width: 100%;
-  font-size: 25px;
+  font-size: 20px;
+  padding: 30px;
+  display: inline-block;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .text h1 {
   font-size: 70px;
+  color: white;
 }
 
 .text p {
   font-size: 30px;
+  color: white;
 }
 
 .recipe {
-  height: 500px;
+  height: 550px;
+}
+
+.container-recipes {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+a {
+  color: green;
+}
+
+a:hover {
+  background-color:rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#left {
+  width: 45%;
+  position: fixed;
+  left: 20px;
+  top: 200px;
+  height: 100%;
+  padding: 10px;
+}
+
+#right {
+  width: 45%;
+  position: fixed;
+  right: 20px;
+  top: 200px;
+  height: 70%;
+  overflow: scroll;
+  border: 2px solid green;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }

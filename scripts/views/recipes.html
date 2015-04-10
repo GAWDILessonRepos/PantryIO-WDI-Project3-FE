@@ -1,11 +1,9 @@
-<div class="container marketing">
-    <header><h1>All of the Recipes</h1></header>
-      <!-- Three columns of text below the carousel -->
+<div class="container-recipes">
         <div class="col-xs-4" ng-repeat="recipes in recipesController.recipes.recipes">
           <article class='recipe'>
-          <img ng-src="{{recipes.image_url}}" width="200" height="200">
+          <img ng-src="{{recipes.image_url}}" width="350" height="300">
           <h2>{{recipes.title}}</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <h3>Social Rank: {{recipes.social_rank | number: 2}}</h3>
 
          <div class="search-form" name="searchForm" ng-controller="RecipesController as recipesController" ng-model="recipesController.recipe_id.rId">
           <p><button ng-click="recipesController.loadOneRecipe(recipes.recipe_id)" class="button-submit" class="btn btn-default">View details &raquo;</button></p>
