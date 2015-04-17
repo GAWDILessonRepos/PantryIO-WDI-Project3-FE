@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 angular.module('PantryIO').factory('RecipesFactory', ['$http', '$window', 'ServerUrl', function($http,$window,ServerUrl){
 
   var recipes = {};

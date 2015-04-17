@@ -1,8 +1,12 @@
 'use strict';
 angular.module('PantryIO').config(['$routeProvider', function($routeProvider){
   $routeProvider
-    .when('/home', {
-      templateUrl: 'scripts/views/home.html'
+    .when('/', {
+      templateUrl: 'scripts/views/home.html',
+      controller: 'HomeController'
+    })
+    .when('/login', {
+      templateUrl: 'scripts/views/login.html'
     })
     .when('/recipes', {
       templateUrl: 'scripts/views/recipes.html',

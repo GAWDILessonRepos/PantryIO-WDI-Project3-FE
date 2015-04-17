@@ -22,9 +22,10 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <ng-include src="'templates/partials/navbar.html'"></ng-include>
+  <!-- <ng-include src="'scripts/views/partials/navbar.html'"></ng-include> -->
+  <ga-navbar></ga-navbar>
   <ng-view></ng-view>
-  <ng-include src="'templates/partials/footer.html'"></ng-include>
+  <ng-include src="'scripts/views/partials/footer.html'"></ng-include>
   <!-- <div class="container">
     <div class="background-image">
       <img src="http://thumbs.dreamstime.com/z/colorful-herbs-spices-selection-aromatic-ingredients-cutting-board-blank-notepad-copyspace-34483552.jpg" alt="Ingredients on cutting board">
@@ -51,7 +52,11 @@
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -96,10 +101,15 @@
         <!-- controllers -->
         <script src="scripts/controllers/MainController.js"></script>
         <script src="scripts/controllers/RecipesController.js"></script>
+        <script src="scripts/controllers/LoginController.js"></script>
+        <script src="scripts/controllers/NavbarController.js"></script>
+        <script src="scripts/controllers/HomeController.js"></script>
 
        <!-- directives -->
        <script src="scripts/directives/MainDirective.js"></script>
        <script src="scripts/directives/RecipeDirective.js"></script>
+       <script src="scripts/directives/LoginDirective.js"></script>
+       <script src="scripts/directives/NavbarDirective.js"></script>
 
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
