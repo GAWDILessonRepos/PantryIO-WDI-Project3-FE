@@ -26,24 +26,6 @@
   <ga-navbar></ga-navbar>
   <ng-view></ng-view>
   <ng-include src="'scripts/views/partials/footer.html'"></ng-include>
-  <!-- <div class="container">
-    <div class="background-image">
-      <img src="http://thumbs.dreamstime.com/z/colorful-herbs-spices-selection-aromatic-ingredients-cutting-board-blank-notepad-copyspace-34483552.jpg" alt="Ingredients on cutting board">
-    </div>
-    <div class="text">
-    <h1>Enter an Ingredient to Start</h1>
-    <p class="lead">Let's look up some recipes, shall we?</p>
-
-    <form class="search-form" name="searchForm" ng-controller="RecipesController as recipesController" ng-submit="recipesController.searchRecipes(recipesController.ingredients)">
-      <input id="ingredients" type="text" ng-model="recipesController.ingredients.q" placeholder="ingredients">
-      <input type="submit" class="button-submit">
-    </form>
-    <br>
-      <div class="search-form" name="searchForm" ng-controller="RecipesController as recipesController">
-        <button ng-click="recipesController.loadAllRecipes()" class="button-submit">Gimme All Recipes!</button>
-      </div>
-    </div>
-  </div> -->
 
   <div class="col-lg-6">
   </div>
@@ -96,6 +78,7 @@
         <script src="scripts/constants/Constants.js"></script>
         <script src="scripts/factories/RecipesFactory.js"></script>
         <script src="scripts/factories/AuthFactory.js"></script>
+          <script src="scripts/factories/ProfilesFactory.js"></script>
 
 
         <!-- controllers -->
@@ -104,6 +87,7 @@
         <script src="scripts/controllers/LoginController.js"></script>
         <script src="scripts/controllers/NavbarController.js"></script>
         <script src="scripts/controllers/HomeController.js"></script>
+        <script src="scripts/controllers/ProfilesController.js"></script>
 
        <!-- directives -->
        <script src="scripts/directives/MainDirective.js"></script>

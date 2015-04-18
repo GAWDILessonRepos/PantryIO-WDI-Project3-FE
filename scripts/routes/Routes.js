@@ -8,6 +8,11 @@ angular.module('PantryIO').config(['$routeProvider', function($routeProvider){
     .when('/login', {
       templateUrl: 'scripts/views/login.html'
     })
+    .when('/profile', {
+      templateUrl: 'scripts/views/profile.html',
+      controller: 'ProfilesController',
+      controllerAs: 'profilesController'
+    })
     .when('/recipes', {
       templateUrl: 'scripts/views/recipes.html',
       controller: 'RecipesController',

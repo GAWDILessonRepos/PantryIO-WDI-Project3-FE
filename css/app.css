@@ -44,7 +44,7 @@ ul#horizontal-list li{
   position:absolute;
   text-align:center;
   top: 215px;
-  width: 100%;
+  width: 1500px;
   font-size: 20px;
   padding: 30px;
   display: inline-block;
@@ -102,6 +102,7 @@ a:hover {
 
 footer {
   position: fixed;
+  margin-left: 500px;
   width: 100%;
   bottom: 0;
 }
