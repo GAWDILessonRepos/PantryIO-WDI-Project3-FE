@@ -16,7 +16,6 @@ function recipesController(RecipesFactory, $location){
   vm.searchRecipes = function(ingredients){
     console.log(ingredients);
     RecipesFactory.getRecipes(ingredients).then(function(response){
-      vm.ingredients = {};
       $location.path('/recipes');
     });
   };

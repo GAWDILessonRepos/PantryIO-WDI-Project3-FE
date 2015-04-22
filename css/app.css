@@ -84,7 +84,7 @@ a:hover {
   position: fixed;
   left: 20px;
   top: 200px;
-  height: 100%;
+  height: 70%;
   padding: 10px;
 }
 
@@ -100,9 +100,10 @@ a:hover {
   padding: 10px;
 }
 
-footer {
-  position: fixed;
-  margin-left: 500px;
+#footer {
+  position: absolute;
+  clear: both;
+  background-color: white;
   width: 100%;
   bottom: 0;
 }

@@ -5,7 +5,8 @@
     <ul id="horizontal-list">
         <li class="active"><a ng-href="#/">Home</a></li>
         <li>|</li>
-        <li><a ng-href="#/profile">My Profile</a></li>
+        <li ng-if="navbarController.isLoggedin()"><a ng-href="#/profile">My Profile</a></li>
+        <li ng-if="!navbarController.isLoggedin()"><a ng-href="#">About</a></li>
         <li>|</li>
         <li ng-if="!navbarController.isLoggedin()"><a ng-href="#/login">Login</a></li>
         <li ng-if="navbarController.isLoggedin()"><a ng-href="javascript:void(0)" ng-click="navbarController.logout()">Logout</a></li>

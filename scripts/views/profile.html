@@ -1,7 +1,23 @@
-<h1>Hi in profile page</h1>
+<h1>Profile page</h1>
 
-
- <article ng-repeat="user in profilesController.user">
-    <h3>{{user.name}}</h3>
+<div ng-repeat="user in profilesController.user" class="oneUser">
+  <div id="left">
+  <h2>My Info</h2>
+  <article>
+    <h3>Name: {{user.name}}</h3>
+    <h3>Email: {{user.email}}</h3>
   </article>
-</section>
+  </div>
+
+  <div id="right">
+  <h2>My Recipes</h2>
+  <article ng-repeat="recipe in user.recipes">
+    <h3>{{recipe.title}}</h3>
+     <ul>
+      <li>Description: {{recipe.description}}</li>
+      <li>Instructions: {{recipe.directions}}</li>
+    </ul>
+  </article>
+  </div>
+</div>
+

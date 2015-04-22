@@ -16,7 +16,7 @@ angular.module('PantryIO').factory('RecipesFactory', ['$http', '$window', 'Serve
   var getRecipes = function(ingredients){
     console.log(ingredients);
     //create an array for all the ingredients entered into the search
-    array_ingredients = ingredients.q.split(' ');
+    array_ingredients = ingredients.q.split(', ');
     console.log(array_ingredients);
     return $http.patch(ServerUrl +'/food2fork/1', ingredients).success(function(data){
       console.log(data);
